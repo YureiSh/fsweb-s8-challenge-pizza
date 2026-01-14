@@ -1,0 +1,70 @@
+/*HomePage.css*/
+
+.logo-enterance {
+  padding-top: 2.5rem;
+  max-width: 500px; /*Bunu yeni ekledim*/
+  padding-bottom: 1rem;
+  display: block;
+  margin: 0 auto;
+}
+
+.big-white-text {
+  font-family: "Barlow", sans-serif;
+  font-weight: 300;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 4.5rem;
+  font-style: normal;
+  text-transform: uppercase;
+  color: white;
+}
+
+.btn-danger {
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  background-color: #FDC913;
+  margin-top: 1rem;
+  padding: 1rem 3rem;
+  border-radius: 1.5rem;
+  text-decoration: none;
+  color: black;
+}
+
+.enterance {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header.enterance-header {
+  background-image: url("../images/iteration-1-images/home-banner.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+
+@media (max-width:950px) {
+  header.enterance-header {
+  background-image: url("../images/iteration-1-images/home-banner.png");
+    min-height: 100vh;
+    background-size: auto;
+  }
+
+  .addition-yellow-text {
+    display: none;
+  }
+
+  .big-white-text {
+    padding: 0 1rem;
+    font-size: 4rem;
+  }
+
+  .logo-enterance {
+    width: 75%;
+    padding-top: 2.5rem;
+    padding-bottom: 1rem;
+  }
+}

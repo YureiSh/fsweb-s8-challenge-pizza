@@ -1,0 +1,19 @@
+.siparis-header {
+    background-color: red;
+}
+
+.siparis-header-inner{
+  max-width: 600px; 
+  margin: 0 auto;
+  padding: 0 16px;
+  padding-bottom: 1rem;
+}
+
+.links{
+    padding-top: 1rem;
+    padding-left: 1rem;
+}
+.tip{
+    text-decoration: none;
+    color: white;
+}
