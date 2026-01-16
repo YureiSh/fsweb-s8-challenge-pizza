@@ -1,5 +1,7 @@
+import Footer from "./Footer";
 import "./HomePage.css"
 import { Link } from "react-router-dom";
+import HomePageBody from "./HomePageBody";
 
 export default function HomePage() {
   return (
@@ -22,6 +24,8 @@ export default function HomePage() {
 
         </div>
       </header>
+      <HomePageBody/>
+      <Footer/>
     </main>
   );
 }
