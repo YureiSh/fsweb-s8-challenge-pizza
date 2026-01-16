@@ -151,16 +151,17 @@ export default function SiparisBody({ form, setForm }) {
                         </div>
                         <hr className='mt-4 mb-4'></hr>
 
-                        <div className='checkout'>
+                        <div className='d-flex flex-wrap justify-content-between gap-3'>
+                            <div className="summaryArea">
+                                <Summary data={form} />
+                            </div>
                             <div className="counterArea">
                                 <SiparisCount value={form.count} onClick={handleCounter} />
                                 <Button
-                                    className="btn btn-warning"
+                                    className="btn btn-warning mt-5"
                                     disabled={!isValid}
+                                    
                                 >SİPARİŞ VER</Button>
-                            </div>
-                            <div className="summaryArea">
-                                <Summary data={form} />
                             </div>
                         </div>
                     </div>

@@ -42,11 +42,11 @@ export default function SiparisAlindi({ form }) {
                         <h4 className='fs-5 pb-2'>Sipariş Toplamı</h4>
                         <div className='d-flex justify-content-between fw-medium '>
                             <p>Seçimler</p>
-                            <p>{form.extras.length * 5}₺</p>
+                            <p>{form.extras.length * 5 * form.count} ₺</p>
                         </div>
                         <div className='d-flex justify-content-between fw-medium '>
                             <p >Toplam</p>
-                            <p>{form.extras.length * 5 + 80.50}₺</p>
+                            <p>{form.extras.length * 5 + 80 * form.count} ₺</p>
                         </div>
                     </div>
                 </div>

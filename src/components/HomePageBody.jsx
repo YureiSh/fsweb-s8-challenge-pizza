@@ -165,9 +165,3 @@ export default function HomePageBody() {
     </>
   );
 }
-
-/*
-cypress testlerini ekle | ok
-onay formu güzelleştirme
-ve sipariş ver tuşu
-*/

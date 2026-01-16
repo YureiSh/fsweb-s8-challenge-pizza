@@ -7,7 +7,7 @@ export default function BoyutSec({ value, onChange, invalid }) {
         Boyut Seç <span className="text-danger">*</span>
       </legend>
 
-      <FormGroup check className="mb-2">
+      <FormGroup check className="mb-2 ">
         <Input
           id="size-S"
           name="pizzaSize"

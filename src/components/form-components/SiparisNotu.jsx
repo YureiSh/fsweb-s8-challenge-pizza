@@ -14,7 +14,7 @@ export default function SiparisNotu({ value, onChange }) {
                     type="textarea"
                     value={value}
                     onChange={onChange}
-                    style={{padding:"1rem"}}
+                    style={{padding:"1rem", backgroundColor:"#FAF7F2"}}
                 />
             </FormGroup>
         </>

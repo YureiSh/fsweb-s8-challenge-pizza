@@ -14,7 +14,7 @@ export default function Isimarea({ value, onChange, invalid }) {
                     type="text"
                     value={value}
                     onChange={onChange}
-                    style={{padding:"1rem"}}
+                    style={{padding:"1rem", backgroundColor:"#FAF7F2"}}
                     invalid={invalid}
                     data-cy="form-isim"
                 />

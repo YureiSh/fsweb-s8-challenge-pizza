@@ -38,6 +38,7 @@
     width: 350px;
     border: 1px solid #D9D9D9;
     border-radius: 2%;
+    background-color: #FAF7F2;
 }
 
 #form-banner {
@@ -45,4 +46,64 @@
     object-fit: contain;
     object-position: center;
     display: block;
+}
+
+/*Custom Ekstra Malzeme Seç*/
+
+.extra-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  width: 120px;
+}
+
+.extra-checkbox {
+  position: absolute;
+  opacity: 0;
+}
+
+.extra-label {
+  position: relative;
+  padding-left: 38px;
+  cursor: pointer;
+  line-height: 28px;
+}
+
+.extra-label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  background: #FAF7F2;
+  border: 1px solid #ddd;
+}
+
+.extra-label::after {
+  content: "✓";
+  position: absolute;
+  left: 7px;
+  top: 50%;
+  transform: translateY(-55%);
+  font-size: 18px;
+  font-weight: 900;
+  color: #000;
+  opacity: 0;
+}
+
+.extra-checkbox:checked + .extra-label::before {
+  background: #fdc913;
+  border-color: #fdc913;
+}
+
+.extra-checkbox:checked + .extra-label::after {
+  opacity: 1;
+}
+
+.extra-checkbox:disabled + .extra-label {
+  opacity: 0.6;
+  cursor: not-allowed;
 }

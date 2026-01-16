@@ -9,6 +9,7 @@ export default function HamurKalinligi({value, onChange, invalid}) {
                     Hamur Seç <span className="text-danger">*</span>    
                 </Label>
                 <Input
+                    style={{backgroundColor:"#FAF7F2" ,padding:"1rem"}}
                     id="dough"
                     name="dough"
                     type="select"

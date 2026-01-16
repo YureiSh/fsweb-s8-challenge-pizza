@@ -14,7 +14,7 @@ const EXTRAS = [
     { value: "Sarımsak", label: "Sarımsak" },
 
     { value: "Biber", label: "Biber" },
-    { value: "Sucuk", label: "Sucuk" },
+    { value: "Mantar", label: "Mantar" },
     { value: "Ananas", label: "Ananas" },
     { value: "Kabak", label: "Kabak" },
 ];
@@ -31,12 +31,7 @@ export default function EkstraMalzeme({ value = [], onChange, invalid }) {
 
                 <div data-cy="form-extras" className="d-flex flex-wrap pt-4" style={{ columnGap: "2rem", rowGap: "0.75rem" }}>
                     {EXTRAS.map((item) => (
-                        <FormGroup
-                            key={item.value}
-                            check
-                            className="m-0"
-                            style={{ width: "150px" }}
-                        >
+                        <FormGroup key={item.value} className="m-0 extra-item">
                             <Input
                                 id={`extra-${item.value}`}
                                 name="extras"
@@ -45,8 +40,10 @@ export default function EkstraMalzeme({ value = [], onChange, invalid }) {
                                 checked={value.includes(item.value)}
                                 onChange={onChange}
                                 disabled={value.length >= 10 && !value.includes(item.value)}
+                                className="extra-checkbox"
                             />
-                            <Label for={`extra-${item.value}`} check className="fw-semibold">
+
+                            <Label for={`extra-${item.value}`} className="extra-label fw-semibold">
                                 {item.label}
                             </Label>
                         </FormGroup>
