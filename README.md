@@ -1,3 +1,5 @@
+<img width="1718" height="898" alt="project-0" src="https://github.com/user-attachments/assets/31bebf2c-0ba7-48c3-9f6c-db3d52abf756" />
+
 # Sprint Challenge: _Teknolojik Yemekler - SPA_
 
 ## Proje Açıklaması
